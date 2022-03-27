@@ -11,7 +11,7 @@
     "prettier": "prettier --check --no-error-on-unmatched-pattern 'src/'",
     "prettier:fix": "prettier --write --no-error-on-unmatched-pattern 'src/'",
     "stylelint": "stylelint --allow-empty-input 'src/**/*.styles.js'",
-    "test": "CI=true jest",
+    "test": "set CI=true && jest",
     "test:cover": "jest --coverage",
     "verify": "npm run lint && npm run stylelint && npm run prettier",
     "prepare": "husky install"
